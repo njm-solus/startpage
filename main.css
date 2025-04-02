@@ -17,9 +17,37 @@ body {
   background-image: url("assets/background.png");
   background-size: cover;
   margin: 0px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   font-family: "Kyok Medium";
+}
+
+
+form {
+  background-color: var(--background);
+  opacity: 0.5;
+  max-width: 100%;
+  min-height: 100%;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: var(--margin-main);
+}
+
+input {
+  all: unset;
+  font: 16pt;
+  color: #fff;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 6px 10px;
+  display: flex;
+}
+
+::placeholder{
+  text-align: center;
 }
 
 .container {
@@ -48,7 +76,7 @@ body {
 #nazrin {
   width: var(--art-size);
   height: var(--art-size);
-  background-image: url("assets/nazrin.png");
+  background-image: url("assets/proxy-image.jpeg");
   background-size: cover;
   background-position: left;
   border-radius: var(--border-radius);
