@@ -9,6 +9,25 @@
     <link href="assets/favicon.svg" rel="shortcut icon" type="image/x-icon" />
   </head>
   <body>
+    <div>
+      <form id="form" role="search">
+        <input type="search" id="query" name="q" placeholder="Search....">
+      </form>
+      <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const duckduckgo = 'https://duckduckgo.com/?t=h_&q=';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = duckduckgo + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+    </div>
     <div class="container">
       <div class="floating-box">
         <div id="art">
@@ -21,47 +40,45 @@
             <div class="bookmark-inner-container">
               <a class="bookmark" href="https://youtube.com" target="_blank">Youtube</a>
               <div class="divider">·</div>
-              <a class="bookmark" href="https://github.com/elenapan" target="_blank">Github</a>
+              <a class="bookmark" href="https://github.com/njm-solus" target="_blank">Github</a>
               <div class="divider">·</div>
-              <a class="bookmark" href="https://news.ycombinator.com" target="_blank">Hacker News</a>
+              <a class="bookmark" href="https://github.com/elenapan" target="_blank">Elenapan</a>
               <div class="divider">·</div>
-              <a class="bookmark" href="http://news.tuxmachines.org" target="_blank">Tux Machines</a>
+              <a class="bookmark" href="https://freecodecamp.org" target="_blank">Free Code Camp</a>
             </div>
           </div>
           <div class="bookmark-set green">
-            <a class="bookmark-title" href="https://old.reddit.com" target="_blank">reddit</a>
+            <a class="bookmark-title" href="https://reddit.com" target="_blank">reddit</a>
             <div class="bookmark-inner-container">
-              <a class="bookmark" href="https://old.reddit.com/r/linux" target="_blank">/r/linux</a>
+              <a class="bookmark" href="https://reddit.com/r/linux" target="_blank">/r/linux</a>
               <div class="divider">·</div>
-              <a class="bookmark" href="https://old.reddit.com/r/unixporn" target="_blank">/r/unixporn</a>
-              <div class="divider">·</div>
-              <a class="bookmark" href="https://old.reddit.com/r/gentoo" target="_blank">/r/gentoo</a>
+              <a class="bookmark" href="https://reddit.com/r/unixporn" target="_blank">/r/unixporn</a>
             </div>
           </div>
-          <div class="bookmark-set blue">
-            <a class="bookmark-title" href="https://lemmy.ml/" target="_blank">lemmy</a>
-            <div class="bookmark-inner-container">
-              <a class="bookmark" href="https://lemmy.ml/c/linux" target="_blank">/c/linux</a>
-              <div class="divider">·</div>
-              <a class="bookmark" href="https://lemmy.ml/c/unixporn" target="_blank">/c/unixporn</a>
-              <div class="divider">·</div>
-              <a class="bookmark" href="https://lemmy.ml/c/privacy" target="_blank">/c/privacy</a>
+         <!-- #<div class="bookmark-set blue">
+           # <a class="bookmark-title" href="https://lemmy.ml/" target="_blank">lemmy</a>
+            #<div class="bookmark-inner-container">
+             # <a class="bookmark" href="https://lemmy.ml/c/linux" target="_blank">/c/linux</a>
+              #<div class="divider">·</div>
+              #<a class="bookmark" href="https://lemmy.ml/c/unixporn" target="_blank">/c/unixporn</a>
+              #<div class="divider">·</div>
+              #<a class="bookmark" href="https://lemmy.ml/c/privacy" target="_blank">/c/privacy</a>
+            #</div>
+          #</div>
+          #<div class="bookmark-set magenta">
+            #<a class="bookmark-title" href="https://twitch.tv/" target="_blank">twitch</a>
+            #<div class="bookmark-inner-container">
+              #<a class="bookmark" href="https://www.twitch.tv/directory/category/path-of-exile" target="_blank">PoE</a>
+              #<div class="divider">·</div>
+              #<a class="bookmark" href="https://www.twitch.tv/directory/category/dota-2" target="_blank">Dota</a>
+              #<div class="divider">·</div>
+              #<a class="bookmark" href="https://www.twitch.tv/directory/category/guild-wars-2" target="_blank">GW2</a>
+              #<div class="divider">·</div>
+              #<a class="bookmark" href="https://www.twitch.tv/directory/category/final-fantasy-xiv-online" target="_blank">FFXIV</a>
+              #<div class="divider">·</div>
+              #<a class="bookmark" href="https://www.twitch.tv/directory/category/grim-dawn" target="_blank">GD</a>
             </div>
-          </div>
-          <div class="bookmark-set magenta">
-            <a class="bookmark-title" href="https://twitch.tv/" target="_blank">twitch</a>
-            <div class="bookmark-inner-container">
-              <a class="bookmark" href="https://www.twitch.tv/directory/category/path-of-exile" target="_blank">PoE</a>
-              <div class="divider">·</div>
-              <a class="bookmark" href="https://www.twitch.tv/directory/category/dota-2" target="_blank">Dota</a>
-              <div class="divider">·</div>
-              <a class="bookmark" href="https://www.twitch.tv/directory/category/guild-wars-2" target="_blank">GW2</a>
-              <div class="divider">·</div>
-              <a class="bookmark" href="https://www.twitch.tv/directory/category/final-fantasy-xiv-online" target="_blank">FFXIV</a>
-              <div class="divider">·</div>
-              <a class="bookmark" href="https://www.twitch.tv/directory/category/grim-dawn" target="_blank">GD</a>
-            </div>
-          </div>
+          #</div> -->
         </div>
       </div>
     </div>
